@@ -36,3 +36,37 @@ int main() {
 
     return 0;
 }
+
+//#include <stdio.h>
+//#include <string.h>
+//#include <ctype.h>
+
+//int Palindromo(char *str) {
+//    int len = strlen(str);
+//    int i = 0, j = len - 1;
+//   while (i < j) {
+//        while (!isalpha(str[i])) i++;  
+//        while (!isalpha(str[j])) j--;
+//
+//      if (tolower(str[i]) != tolower(str[j])) {
+//          return 0;  
+//      }
+//        i++;
+//        j--;
+//    }
+//    return 1;  
+//}
+
+//int main() {
+//    char frase[100];
+//    printf("Digite uma frase: ");
+//    fgets(frase, sizeof(frase), stdin);
+//    
+//    if (Palindromo(frase)) {
+//        printf("A frase é palíndroma.\n");
+//    } else {
+//        printf("A frase não é palíndroma.\n");
+//    }
+//
+//    return 0;
+//}
