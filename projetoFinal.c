@@ -74,7 +74,7 @@ void alterarSuaSenha();
 void verTodosUsuarios(); // todos  (so o nome)
 void verUsuarios(); // parte nome (especifico) 
 void verSuasPlaylists();   // so as suas
-void verTodasPlaylists(); // todas
+void verTodasPlaylists(); // todas sem as suas
 void verPlaylist(); // codigo titulo (especifica) primeiro a sua
 void cadastrarPlaylist();
 void inserirMusicaPlaylist();
