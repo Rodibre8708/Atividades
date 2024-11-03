@@ -29,7 +29,7 @@ Usuario usuarios[MAX_USUARIOS];
 int qtdUsuarios = 0;
 Usuario *usuarioLogado = NULL;
 
-// Funções de gerenciamento de músicas
+
 void adicionarMusica();
 void removerMusica();
 void listarMusicas();
@@ -39,23 +39,21 @@ void ordenarMusicas();
 void contarMusicas();
 void menuUsuario();
 
-// Funções de gerenciamento de usuário
+
 void telaEscolhaUsuario();
 void loginUsuario();
 void cadastrarUsuario();
-void exibirMenuPrincipal();
 
-// Função principal
+
 int main() {
     telaEscolhaUsuario();
     return 0;
 }
 
-// Funções para exibir e navegar nos menus
+
 void telaEscolhaUsuario() {
     int opcao;
     do {
-        printf("\n--- MENU INICIAL ---\n");
         printf("1. Login de usuário\n");
         printf("2. Cadastrar usuário\n");
         printf("0. Sair\n");
@@ -65,7 +63,7 @@ void telaEscolhaUsuario() {
         switch(opcao) {
             case 1: loginUsuario(); break;
             case 2: cadastrarUsuario(); break;
-            case 0: printf("Saindo...\n"); break;
+            case 0: break;
             default: printf("Opção inválida!\n");
         }
     } while(opcao != 0);
@@ -127,7 +125,6 @@ void cadastrarUsuario() {
 void menuUsuario() {
     int opcao;
     do {
-        printf("\n--- MENU DE REPRODUÇÃO ---\n");
         printf("1. Adicionar música\n");
         printf("2. Remover música\n");
         printf("3. Visualizar todas as músicas\n");
@@ -153,7 +150,7 @@ void menuUsuario() {
     } while(opcao != 0);
 }
 
-// Funções de música (usar lista circular duplamente encadeada)
+
 void adicionarMusica() {
     Musica *novaMusica = (Musica *)malloc(sizeof(Musica));
     if (!novaMusica) {
